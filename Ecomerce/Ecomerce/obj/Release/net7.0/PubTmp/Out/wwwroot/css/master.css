@@ -1,0 +1,235 @@
+
+/*///////////////////////////////////////////*/
+
+.landing {
+    background-color: white;
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    height: 450px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom:50px;
+}
+
+    .landing .container {
+        display: flex;
+        justify-content: space-between;
+        height: calc(100vh - 69.9px);
+    }
+
+    .landing::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -40px;
+        width: 100%;
+        height: 100%;
+        background-color: #ececec;
+        z-index: 0;
+        transform: skewY(-6deg);
+        transform-origin: top left;
+    }
+
+
+    .landing .text {
+        align-self: center;
+        margin-top: -100px;
+        flex: 1;
+    }
+
+
+    .landing .container .text h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        max-width: 100%;
+        letter-spacing: -3px;
+    }
+
+  
+    .landing .container .moving-img img {
+        width: 400px;
+        animation-name: up-down;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        max-width: 100%;
+    }
+
+    .landing .container .moving-img {
+        flex: 1;
+    }
+
+@media (max-width:991px) {
+    .landing .container .moving-img {
+        display: none;
+    }
+
+    .landing .text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.landing .container {
+    margin-top: -100px;
+}
+
+@keyframes up-down {
+
+    0% {
+    }
+
+    50% {
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        -o-transform: translateY(-50px);
+    }
+
+
+    50% {
+        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        -o-transform: translateY(50px);
+    }
+
+    100% {
+    }
+}
+
+
+
+@media (max-width:767px) {
+    .landing .container .moving-img img {
+        display: none;
+    }
+
+    .landing .text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .landing .container .text h1 {
+        font-size: 35px;
+    }
+
+    .landing .container .text p {
+        font-size: 15px;
+    }
+}
+
+/*//////////////////////////////////////////////*/
+
+
+
+.New-Items {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color: white;
+}
+
+.New-Items .contant {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+.New-Items .contant .card {
+    overflow: hidden;
+    height: fit-content;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+    box-shadow: 0px 0px 20px #7777773d;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.New-Items .contant .card .image {
+    max-width: 100%;
+    height:30%;
+    overflow: hidden;
+}
+    .New-Items .contant .card .image .card-img {
+        max-width: 100%;
+        
+    }
+
+
+.New-Items .contant .card .text {
+    max-width: 100%;
+    padding: 15px;
+    height: 40%;
+    border-bottom: 1px solid #7777776d;
+}
+
+
+.New-Items .contant .card .text p {
+    color: #777;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.New-Items .contant .card .read-more {
+    display: flex;
+    padding: 15px 25px;
+    color: var(--main-color);
+    justify-content: space-between;
+}
+
+.New-Items .contant .card .read-more a {
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.New-Items .contant .card .read-more i {
+    animation-name: arrow-move;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+@keyframes arrow-move {
+    0% {
+    }
+
+    100% {
+        transform: translateX(15px);
+        -webkit-transform: translateX(15px);
+        -moz-transform: translateX(15px);
+        -ms-transform: translateX(15px);
+        -o-transform: translateX(15px);
+    }
+}
+
+.New-Items .contant .card:hover .read-more i {
+    animation-play-state: running;
+}
+
+.New-Items .contant .card:hover {
+    box-shadow: 0px 0px 20px #7777779c;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+
+
+

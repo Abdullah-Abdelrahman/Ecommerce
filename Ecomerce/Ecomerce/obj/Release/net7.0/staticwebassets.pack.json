@@ -1,0 +1,1237 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\Ecomerce.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Ecomerce.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\AdminPage\\Products.css",
+      "PackagePath": "staticwebassets\\css\\AdminPage\\Products.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\Cart.css",
+      "PackagePath": "staticwebassets\\css\\Cart.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\GeneralDetails.css",
+      "PackagePath": "staticwebassets\\css\\GeneralDetails.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\OwnerPage.css",
+      "PackagePath": "staticwebassets\\css\\OwnerPage.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\SetBlocks.css",
+      "PackagePath": "staticwebassets\\css\\SetBlocks.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\SetStyles.css",
+      "PackagePath": "staticwebassets\\css\\SetStyles.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\Update.css",
+      "PackagePath": "staticwebassets\\css\\Update.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\UserPage.css",
+      "PackagePath": "staticwebassets\\css\\UserPage.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\_css\\_SideNavBar.css",
+      "PackagePath": "staticwebassets\\css\\_css\\_SideNavBar.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\getProductById.css",
+      "PackagePath": "staticwebassets\\css\\getProductById.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\master.css",
+      "PackagePath": "staticwebassets\\css\\master.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\my_layout.css",
+      "PackagePath": "staticwebassets\\css\\my_layout.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\css\\normalize.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\setQuntatiy.css",
+      "PackagePath": "staticwebassets\\css\\setQuntatiy.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\all.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\brands.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\brands.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\brands.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\regular.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\regular.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\regular.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\solid.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\solid.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\solid.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-shims.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\font-awesome\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\all.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\all.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\all.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\brands.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\brands.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\brands.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\fontawesome.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\regular.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\regular.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\regular.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\solid.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\solid.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\solid.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\v4-shims.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\font-awesome\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\sprites\\brands.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\sprites\\brands.svg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\sprites\\regular.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\sprites\\regular.svg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\sprites\\solid.svg",
+      "PackagePath": "staticwebassets\\font-awesome\\sprites\\solid.svg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\01595fb1-7a59-4380-9358-2632483be41b_black_traditional_3.jpg",
+      "PackagePath": "staticwebassets\\images\\01595fb1-7a59-4380-9358-2632483be41b_black_traditional_3.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\01bdb405-8e65-4b26-b215-419484c79561_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\01bdb405-8e65-4b26-b215-419484c79561_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\04695c54-2909-40aa-a484-da7f9e30a9a5_all_1.png",
+      "PackagePath": "staticwebassets\\images\\04695c54-2909-40aa-a484-da7f9e30a9a5_all_1.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\0c0e730c-c47c-47b7-85d1-86ba662a2569_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\0c0e730c-c47c-47b7-85d1-86ba662a2569_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\0e417eab-b18e-41ef-a5ff-1a78647f92c9_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\0e417eab-b18e-41ef-a5ff-1a78647f92c9_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\18abb5e0-42d6-48d8-92f7-eceb1b6bd830_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\18abb5e0-42d6-48d8-92f7-eceb1b6bd830_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\266cce80-0426-4fb6-be67-2797508cf0d2_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\266cce80-0426-4fb6-be67-2797508cf0d2_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\2abae34e-f3f5-4884-9d44-e401eb142769_brown_1.jpg",
+      "PackagePath": "staticwebassets\\images\\2abae34e-f3f5-4884-9d44-e401eb142769_brown_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\31f5e4f4-60a0-42c0-9cd0-dd9992ee9e68_brown_1.jpg",
+      "PackagePath": "staticwebassets\\images\\31f5e4f4-60a0-42c0-9cd0-dd9992ee9e68_brown_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\3650e4d6-faa8-46f5-b9ab-b00717e5861b_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\3650e4d6-faa8-46f5-b9ab-b00717e5861b_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\514a988c-640e-4ad7-a95e-e8e11ac14df2_gray_1.jpg",
+      "PackagePath": "staticwebassets\\images\\514a988c-640e-4ad7-a95e-e8e11ac14df2_gray_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\5304e327-fc57-4497-a901-3f32ae30403e_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\5304e327-fc57-4497-a901-3f32ae30403e_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\56c19b99-1320-40ad-8932-acbb16098e2e_gray_traditional.jpg",
+      "PackagePath": "staticwebassets\\images\\56c19b99-1320-40ad-8932-acbb16098e2e_gray_traditional.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\5790c348-37f7-4384-bc00-3f038801d061_brawn_traditional_2.jpg",
+      "PackagePath": "staticwebassets\\images\\5790c348-37f7-4384-bc00-3f038801d061_brawn_traditional_2.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\59791153-5af8-45e8-897f-ea1932fcfb85_all_1.png",
+      "PackagePath": "staticwebassets\\images\\59791153-5af8-45e8-897f-ea1932fcfb85_all_1.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\6427e59a-069a-48ef-b7eb-49d1fa5b3838_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\6427e59a-069a-48ef-b7eb-49d1fa5b3838_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\7836babe-d64e-497b-b2f9-2d3dde5205a1_all_1.png",
+      "PackagePath": "staticwebassets\\images\\7836babe-d64e-497b-b2f9-2d3dde5205a1_all_1.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\7dc9ca1d-ba95-48c4-a063-35d5d2719362_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\7dc9ca1d-ba95-48c4-a063-35d5d2719362_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\822eab35-0709-4239-a8aa-f958834cc7ce_all_1.png",
+      "PackagePath": "staticwebassets\\images\\822eab35-0709-4239-a8aa-f958834cc7ce_all_1.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\82adb9be-797a-4abc-908a-05555137e11a_gray_1.jpg",
+      "PackagePath": "staticwebassets\\images\\82adb9be-797a-4abc-908a-05555137e11a_gray_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\835f573e-9b41-4003-8c46-0f4bc56f4ff9_brawn_traditional_2.jpg",
+      "PackagePath": "staticwebassets\\images\\835f573e-9b41-4003-8c46-0f4bc56f4ff9_brawn_traditional_2.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\8cbffb28-c629-43a3-ba26-484bd9f8546d_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\8cbffb28-c629-43a3-ba26-484bd9f8546d_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\Site\\no-image-icon-15.png",
+      "PackagePath": "staticwebassets\\images\\Site\\no-image-icon-15.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\Site\\shose_landing.png",
+      "PackagePath": "staticwebassets\\images\\Site\\shose_landing.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\UserPage\\C1YBH_UUQAACoIv.jpg",
+      "PackagePath": "staticwebassets\\images\\UserPage\\C1YBH_UUQAACoIv.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\UserPage\\Messages.png",
+      "PackagePath": "staticwebassets\\images\\UserPage\\Messages.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\UserPage\\PreQusetionspng.png",
+      "PackagePath": "staticwebassets\\images\\UserPage\\PreQusetionspng.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\UserPage\\Preorder.png",
+      "PackagePath": "staticwebassets\\images\\UserPage\\Preorder.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\UserPage\\address.png",
+      "PackagePath": "staticwebassets\\images\\UserPage\\address.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\UserPage\\contact_us.png",
+      "PackagePath": "staticwebassets\\images\\UserPage\\contact_us.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\UserPage\\gift_card.png",
+      "PackagePath": "staticwebassets\\images\\UserPage\\gift_card.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\UserPage\\payment.png",
+      "PackagePath": "staticwebassets\\images\\UserPage\\payment.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\UserPage\\premium.jpg",
+      "PackagePath": "staticwebassets\\images\\UserPage\\premium.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\a4b1fe09-37a9-46be-86ae-a1b2638a0a2f_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\a4b1fe09-37a9-46be-86ae-a1b2638a0a2f_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\b16df2c8-2aea-4fb2-bf05-f077ee788c2e_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\b16df2c8-2aea-4fb2-bf05-f077ee788c2e_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\b5202057-07ca-41b6-bbc3-d85df89a3164_gray_traditional_2.jpg",
+      "PackagePath": "staticwebassets\\images\\b5202057-07ca-41b6-bbc3-d85df89a3164_gray_traditional_2.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\b85a6bd1-d978-40f5-8cd4-89d39bacd621_brown_3.jpg",
+      "PackagePath": "staticwebassets\\images\\b85a6bd1-d978-40f5-8cd4-89d39bacd621_brown_3.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\ba24f79d-5b55-4af5-bf75-adacb4130e7f_brown_3.jpg",
+      "PackagePath": "staticwebassets\\images\\ba24f79d-5b55-4af5-bf75-adacb4130e7f_brown_3.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\bb4d5d30-451d-4185-bc64-e915737a26ce_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\bb4d5d30-451d-4185-bc64-e915737a26ce_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\be5a8b03-3969-4f56-9cb4-c12ea564fcae_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\be5a8b03-3969-4f56-9cb4-c12ea564fcae_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\c5774d43-f456-482f-9d6c-fdcc7f0d6fea_brown_2.jpg",
+      "PackagePath": "staticwebassets\\images\\c5774d43-f456-482f-9d6c-fdcc7f0d6fea_brown_2.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\c74ce925-b574-4f26-887d-65de8b3ce71f_all_1.png",
+      "PackagePath": "staticwebassets\\images\\c74ce925-b574-4f26-887d-65de8b3ce71f_all_1.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\cadd9ea9-aef4-4bff-b015-c17d7f5c667b_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\cadd9ea9-aef4-4bff-b015-c17d7f5c667b_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\dc39bb35-ec69-442f-acb5-d235742e2cbb_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\dc39bb35-ec69-442f-acb5-d235742e2cbb_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\dd9fbf37-2402-4f1c-8ead-c2e00397ee96_black_traditional_2.jpg",
+      "PackagePath": "staticwebassets\\images\\dd9fbf37-2402-4f1c-8ead-c2e00397ee96_black_traditional_2.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\deb1e838-1334-4ebe-900c-c015186ac0ab_gray_2.jpg",
+      "PackagePath": "staticwebassets\\images\\deb1e838-1334-4ebe-900c-c015186ac0ab_gray_2.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\e655eea0-c6a0-45ed-8e51-ac6db919aa06_brawn_traditional.jpg",
+      "PackagePath": "staticwebassets\\images\\e655eea0-c6a0-45ed-8e51-ac6db919aa06_brawn_traditional.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\eba97015-9532-4201-bfd3-9bfc94e54b63_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\eba97015-9532-4201-bfd3-9bfc94e54b63_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\ec7338fe-b8ea-48b7-8866-31aeb88de87a_black_traditional_2.jpg",
+      "PackagePath": "staticwebassets\\images\\ec7338fe-b8ea-48b7-8866-31aeb88de87a_black_traditional_2.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\ee426c3c-593c-4ac7-bcd1-1f646c69e945_black_traditional.jpg",
+      "PackagePath": "staticwebassets\\images\\ee426c3c-593c-4ac7-bcd1-1f646c69e945_black_traditional.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\f5f3933c-610d-4996-bdbf-fc0f8ed1a4b1_all_1.png",
+      "PackagePath": "staticwebassets\\images\\f5f3933c-610d-4996-bdbf-fc0f8ed1a4b1_all_1.png"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\f910b4eb-8b0e-43b2-add7-d2e754284a97_black_1.jpg",
+      "PackagePath": "staticwebassets\\images\\f910b4eb-8b0e-43b2-add7-d2e754284a97_black_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\images\\ffa2b1d5-0b27-419e-8282-7456248aca37_brown_1.jpg",
+      "PackagePath": "staticwebassets\\images\\ffa2b1d5-0b27-419e-8282-7456248aca37_brown_1.jpg"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\jquery-validation-sri.json",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\jquery-validation-sri.json"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ar.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ar.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ar.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ar.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_az.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_az.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_az.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_az.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_bg.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_bg.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_bg.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_bg.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_bn_BD.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_bn_BD.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_bn_BD.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_bn_BD.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ca.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ca.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ca.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ca.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_cs.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_cs.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_cs.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_cs.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_da.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_da.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_da.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_da.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_de.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_de.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_de.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_de.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_el.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_el.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_el.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_el.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_es.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_es.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_es.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_es.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_AR.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_es_AR.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_AR.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_es_AR.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_PE.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_es_PE.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_PE.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_es_PE.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_et.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_et.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_et.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_et.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_eu.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_eu.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_eu.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_eu.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_fa.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_fa.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_fa.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_fa.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_fi.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_fi.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_fi.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_fi.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_fr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_fr.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_fr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_fr.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ge.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ge.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ge.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ge.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_gl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_gl.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_gl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_gl.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_he.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_he.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_he.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_he.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_hi.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_hi.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_hi.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_hi.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_hr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_hr.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_hr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_hr.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_hu.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_hu.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_hu.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_hu.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_hy_AM.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_hy_AM.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_hy_AM.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_hy_AM.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_id.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_id.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_id.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_id.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_is.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_is.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_is.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_is.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_it.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_it.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_it.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_it.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ja.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ja.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ja.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ja.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ka.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ka.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ka.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ka.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_kk.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_kk.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_kk.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_kk.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ko.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ko.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ko.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ko.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_lt.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_lt.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_lt.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_lt.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_lv.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_lv.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_lv.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_lv.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_mk.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_mk.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_mk.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_mk.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_my.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_my.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_my.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_my.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_nl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_nl.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_nl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_nl.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_no.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_no.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_no.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_no.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_pl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_pl.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_pl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_pl.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_BR.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_pt_BR.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_BR.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_pt_BR.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_PT.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_pt_PT.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_PT.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_pt_PT.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ro.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ro.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ro.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ro.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ru.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ru.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ru.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ru.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sd.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sd.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sd.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sd.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_si.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_si.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_si.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_si.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sk.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sk.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sk.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sk.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sl.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sl.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sr.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sr.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr_lat.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sr_lat.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr_lat.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sr_lat.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sv.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sv.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_sv.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_sv.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_th.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_th.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_th.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_th.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_tj.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_tj.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_tj.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_tj.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_tr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_tr.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_tr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_tr.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_uk.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_uk.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_uk.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_uk.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ur.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ur.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_ur.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_ur.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_vi.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_vi.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_vi.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_vi.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_zh.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_zh.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh_TW.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_zh_TW.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh_TW.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_zh_TW.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_de.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_de.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_de.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_de.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_es_CL.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_es_CL.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_es_CL.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_es_CL.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_fi.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_fi.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_fi.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_fi.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_it.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_it.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_it.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_it.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_nl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_nl.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_nl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_nl.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_pt.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_pt.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validate\\localization\\methods_pt.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\methods_pt.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\lib\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "E:\\All_of_my_projrcts\\Ecomerce\\Ecomerce\\Ecomerce\\wwwroot\\lib\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\lib\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.Ecomerce.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.Ecomerce.props",
+      "PackagePath": "build\\Ecomerce.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Ecomerce.props",
+      "PackagePath": "buildMultiTargeting\\Ecomerce.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.Ecomerce.props",
+      "PackagePath": "buildTransitive\\Ecomerce.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

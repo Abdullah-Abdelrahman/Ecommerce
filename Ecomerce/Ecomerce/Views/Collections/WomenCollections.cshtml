@@ -1,0 +1,67 @@
+﻿@{
+    // ViewData["Title"] = "Home Page";
+    Layout = "_my_layout";
+}
+@model List<Product>
+
+<link href="~/css/master.css" rel="stylesheet" />
+
+
+
+<div class="landing">
+    <div class="container">
+        <div class="text">
+            <h1>Women Only</h1>
+
+        </div>
+        <div class="moving-img">
+            <img src="~/images/Site/shose_landing.png" alt="why">
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div class="New-Items">
+    <div class="container">
+
+        <div class="contant">
+            @for (int i = 0; i < Model?.Count(); i++)
+            {
+                for (int j = 0; j < Model[i]?.Product_styles?.Count(); j++)
+                {
+                    <div class="card">
+                        <div class="image">
+
+                            <img class="card-img" src="~/images/@Model[i].Product_styles[j]?.Style_images?.FirstOrDefault()?.Image_url"
+                                 alt="no image">
+                        </div>
+
+                        <div class="text">
+                            <h3>@Model[i].Product_name @Model[i].Product_styles[j].Style_name</h3>
+
+                            <p style="color:black">LE @Model[i].Product_styles[j].Style_price.00 EGP</p>
+                        </div>
+                        <div class="read-more">
+                            <a asp-controller="Product" asp-action="getProductByIdAndStyleId" asp-route-id="@Model[i].Product_Id" asp-route-sid="@j">Read More</a>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+
+                        </div>
+
+                    </div>
+
+                }
+
+            }
+
+
+
+        </div>
+    </div>
+</div>
+
+
+

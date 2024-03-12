@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Ecomerce</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/normalize.css">
+	
+	<link href="~/font-awesome/css/all.css" rel="stylesheet" />
+	<link href="~/font-awesome/css/all.min.css" rel="stylesheet" />
+  
+	<link href="~/css/my_layout.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+  
+
+    <div class="header">
+            <div class="hcontainer container">
+                <a class="logo" asp-controller="Home" asp-action="Index">Ecomerce</a>
+
+                <ul class="main-links">
+                    <li class="n-l">
+                    <a asp-controller="Collections" asp-action="NewCollections" class="m-l">NewCollections</a>
+                    </li>
+                    <li class="n-l">
+                    <a asp-controller="Collections" asp-action="MenCollections" class="m-l">MenCollections</a>
+                    </li>
+                    <li class="n-l">
+                    <a asp-controller="Collections" asp-action="WomenCollections" class="m-l">WomenCollections</a>
+                    </li>
+                    <li class="n-l">
+                    <a asp-controller="Collections" asp-action="AllCollections" class="m-l">AllCollections</a>
+                    </li>
+               
+                </ul>
+
+                <ul class="main-icons">
+                  
+                    <li class="icon">
+
+                        <button class="search-button" id="searchButton">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                       
+                    </li>
+                    <li class="icon">
+
+                        @{
+                            if (User?.Identity?.IsAuthenticated == true)
+                            {
+                                <a asp-controller="Account" asp-action="OpenAccount">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
+                            }
+                            else
+                            {
+                                <a asp-controller="Account" asp-action="Login">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
+                            }
+                        }
+
+
+                    </li>
+
+                   <partial name="_Cart" />
+                </ul>
+
+                
+            </div>
+        <div id="searchBar" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button id="closeButton">Close</button>
+        </div>
+    </div>
+
+      
+    
+    <div>
+        <main role="main" class="" >
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="one">
+                <p>Ecomerce</p>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+
+                <p>
+                    Socially and environmentally progressive outdoor footwear
+                </p>
+            </div>
+            <ul class="two">
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>All Products</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>The Weekend Boot</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>The Modern Winter Boot</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>SIze guide</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Shipping Policy</a></li>
+
+            </ul>
+
+            <ul class="three">
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Egypt, Giza, Inside The Sphinx, Room Number 220</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Business Hours: From 10:00 To 18:00</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="numbers">
+                        <p>+20123456789</p>
+                        <p>+20198765432</p>
+                    </div>
+
+                </li>
+            </ul>
+
+
+            <ul class="two">
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Contact Us</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Values</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Refund Policy</a></li>
+            
+
+            </ul>
+        </div>
+
+        <span></span>
+
+        <p style="margin-bottom:0px;">© 2024,Ecomerce </p>
+
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/lib/jquery-validate/jquery.validate.js"></script>
+	<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/select2/js/select2.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+<script>
+    document.getElementById('searchButton').addEventListener('click', function () {
+        document.getElementById('searchBar').style.display = 'block';
+        document.getElementById('searchBar').style.top = '0px';
+        document.getElementById('searchBar').style.opacity = '100%';
+    });
+
+    document.getElementById('closeButton').addEventListener('click', function () {
+        document.getElementById('searchBar').style.display = 'none';
+        document.getElementById('searchBar').style.top = '-50px';
+        document.getElementById('searchBar').style.opacity = '0%';
+    });
+  
+</script>

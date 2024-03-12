@@ -1,0 +1,344 @@
+﻿@using Ecomerce.SeessionModels;
+
+
+@{
+    Layout = "_my_layout";
+    ViewData["Title"] = "SetStyles";
+    @model List<StyleWithFiles>
+}
+
+<h1>SetStyles</h1>
+
+<link href="~/css/setstyles.css" rel="stylesheet" />
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4" style="width:100%">
+        <form id="Sform" enctype="multipart/form-data" asp-controller="Admin" asp-action="SetStyles" method="post" style="width:100%">
+          @*   <div asp-validation-summary="ModelOnly" class="text-danger"></div> *@
+            <table id="styTable" class="table" style="width:100%">
+                <thead>
+
+                    <tr>
+                        <th>
+                            Style Name
+                        </th>
+                        <th>
+                            Style Price
+						</th>
+                        <th style="width:50%">
+							Style images    
+                        </th>
+                        <th>
+                            <button id="addbtn" type="button" onclick="AddItem(this)" class="btn btn-sm btn-secondary visible">Add</button>
+
+                        </th>
+                    </tr>
+                </thead>
+
+                @for(int i = 0; i < Model?.Count(); i++)
+                {
+                    <tr>
+                        <td>
+                            @Html.EditorFor(x=>x[i].style.Style_name,new {htmlAttributes=new {@class="form-control"}})
+                            
+                        </td>
+                        <td>
+                            @Html.EditorFor(x=>x[i].style.Style_price,new {htmlAttributes=new {@class="form-control"}})
+                            
+                        </td>
+
+                        <td style="display: flex;align-items:center;">
+
+                            <button id="addImg-@i" type="button" onclick="AddImage(this)" class="addimg btn btn-sm btn-secondary visible">AddImge</button>
+
+                            @for (int j = 0; j < Model[i]?.style.Style_images?.Count(); j++)
+                            {
+                                <div class="box">
+                                    <input asp-for="@Model[i].files[j].file" value="@Model[i]?.files?[j].file" class="image_block" id="customFile_@i-@j"
+                                           onchange="document.getElementById('PreviewPhoto_@i-@j').src = window.URL.createObjectURL(this.files[0])" type="file" />
+                                    <button style="position:absolute;top:-5px;height:8px;width:8px" id="DeleteImg-@i-@j" type="button" onclick="DeleteImg(this)" class="delImg btn btn-sm btn-danger visible"></button>
+                                    <input hidden asp-for="@Model[i].style.Style_images[j].Image_url" type="text" value="@Model[i]?.style?.Style_images[j]?.Image_url" id="style_image_@i-@j" />
+
+
+                                    @if (Model[i].style?.Style_images[j].Image_url != null && Model[i].style?.Style_images[j].Image_url != "")
+                                    {
+                                        <img class="PreviewPhoto" id="PreviewPhoto_@i-@j" src="~/images/@Model[i].style?.Style_images[j].Image_url" alt="style Image" />
+
+                                    }
+                                    else
+                                    {
+                                        <img class="PreviewPhoto" id="PreviewPhoto_@i-@j" src="~/images/Site/no-image-icon-15.png" alt="style Image" />
+
+                                    }
+                                  
+                                </div>
+                              
+                            }
+                        </td>
+                        <th>
+                            <button id="removebtn-@i" type="button" onclick="DeleteItem(this)" class="btn btn-sm btn-danger visible">Del</button>
+                        </th>
+                    </tr>
+                }
+
+
+
+            </table>
+            
+            <div class="form-group">
+                <input style="margin-left:46%" type="submit" value="Next" class="btn btn-primary" />
+            </div>
+
+            @* //modify cause if there is more than one style *@
+            <input  type="hidden" value="0" id="lastStyleIndex" />
+        </form>
+        
+    </div>
+</div>
+
+<div>
+@*     <a asp-controller="" asp-action=""  class="btn btn-outline-primary">Back</a>
+ *@</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script type="text/javascript">
+
+
+
+        function DeleteItem(btn) {
+          
+            var rowIndex = btn.closest('tr').rowIndex;// get the index of the row to be deleted
+            btn.closest('tr').remove();
+            var table = document.getElementById('styTable'); // Find the closest parent <table> element
+
+            console.log(rowIndex);
+            var rows = table.querySelectorAll('tr'); // Get all rows in the table
+            console.log(rows.length);
+           
+
+            
+            // Update indexes of remaining items
+
+            for (var i = rowIndex; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName('td'); // Get all cells in the current row
+
+                for (var j = 0; j < 2; j++) {
+                    var inputs = cells[j].querySelectorAll('input, textarea, select, img, span'); // Get all inputs in the current cell
+
+                    // Update attributes of each input
+                    inputs.forEach(function (input) {
+                        var name = input.getAttribute('name');
+                        if (name) {
+                            input.setAttribute('name', name.replace(/\[\d+\]/g, '[' + (i - 1) + ']')); // Update the name attribute
+                        }
+                        var id = input.getAttribute('id');
+                        if (id) {
+                            input.setAttribute('id', id.replace(/\d+$/, (i - 1))); // Update the id attribute
+                        }
+                    });
+                }
+
+                  
+                var images = cells[2].querySelectorAll('.box');
+                 
+                 // Update attributes of each input of each image
+                for (var j = 0; j < images.length; j++) {
+
+                    var inputs = images[j].querySelectorAll('input');
+                    inputs.forEach(function (input) {
+                        // Update the name attribute dynamically
+                        // Update the id attribute dynamically
+                        input.name = '[' + (i-1) + '].style.Style_images[' + j + '].Image_url';
+                        if (input.type === 'file') {
+                            input.name = '[' + (i-1) + '].files[' + j + '].file'; // Update the name attribute
+                            input.id = input.id.replace(/\d+$/, i-1) + '-' + j; // Update the id attribute
+                        }
+                    });
+
+                    var spans = images[j].querySelectorAll('span');
+                    spans.forEach(function (span) {
+                        // Update the data-valmsg-for attribute dynamically
+                        span.setAttribute('data-valmsg-for', '[' + (i-1) + '].files[' + j + ']');
+                    });
+
+                    var imgs = images[j].querySelectorAll('img');
+                    imgs.forEach(function (image) {
+                        // Update the id attribute dynamically
+                        image.id = image.id.replace(/\d+$/, (i-1)) + '-' + j; // Update the id attribute
+                    });
+                }
+
+            }
+           
+               
+          
+            document.getElementById('lastStyleIndex').value -= 1;
+
+
+        }
+
+            
+
+        function AddItem(btn) {
+
+            var table = document.getElementById('styTable');
+            var rows = table.getElementsByTagName('tr');
+
+            var rowOuterHtml = rows[rows.length - 1].outerHTML;
+
+            var lastrowIdx = document.getElementById('lastStyleIndex').value;
+
+            var nextrowIdx = eval(lastrowIdx) + 1;
+
+            document.getElementById('lastStyleIndex').value = nextrowIdx;
+
+            rowOuterHtml = rowOuterHtml.replaceAll('_' + lastrowIdx + '_', '_' + nextrowIdx + '_');
+            rowOuterHtml = rowOuterHtml.replaceAll('[' + lastrowIdx + ']', '[' + nextrowIdx + ']');
+            rowOuterHtml = rowOuterHtml.replaceAll('-' + lastrowIdx, '-' + nextrowIdx);
+
+
+            var newRow = table.insertRow();
+            newRow.innerHTML = rowOuterHtml;
+
+            var td = newRow.getElementsByTagName('td')[2]; // Get the third <td> element (containing images)
+            var images = td.querySelectorAll('.box');
+            for (var i = 1; i < images.length; i++) {
+                images[i].remove();
+            }
+
+            var inputs = images[0].querySelectorAll('input');
+            inputs.forEach(function (input) {
+                input.name = '[' + nextrowIdx + '].style.Style_images[' + 0 + '].' + input.name.split('.').pop(); // Update the name attribute
+                input.id = input.id.replace(/\d+$/, nextrowIdx); // Update the id attribute
+                // Clear the file input value
+                if (input.type === 'file') {
+                    input.name = '['+nextrowIdx+'].files['+0+'].file'
+                    input.value = '';
+                    input.onchange = function () {
+                        var file = this.files[0];
+                        var imagePreview = this.parentElement.querySelector('img');
+                        if (file && imagePreview) {
+                            imagePreview.src = URL.createObjectURL(file);
+                        }
+                    };
+                }
+            });
+
+            // Update span elements
+            var spans = images[0].querySelectorAll('span');
+            spans.forEach(function (span) {
+                span.setAttribute('data-valmsg-for', '[' + nextrowIdx + '].style.Style_images[' + 0 + '].' + span.getAttribute('data-valmsg-for').split('.').pop());
+            });
+
+            // Update img elements
+            var images = images[0].querySelectorAll('img');
+            images.forEach(function (image) {
+                image.id = image.id.replace(/\d+$/, nextrowIdx); // Update the id attribute
+                image.src = '/images/noimage.png';
+            });
+        }
+
+
+
+        function AddImage(btn) {
+            var td = btn.closest('td'); // Find the closest parent <td> element
+            var tr = td.closest('tr'); // Find the closest parent <tr> element
+            var rowIndex = tr.rowIndex - 1; // Get the row index (subtract 1 to account for the table header row)
+
+            var lastBox = td.querySelector('.box:last-of-type'); // Get the last box in the current row
+            var newBox = lastBox.cloneNode(true); // Clone the last box
+
+            // Update input elements
+            var inputs = newBox.querySelectorAll('input');
+            inputs.forEach(function (input) {
+                // Update the name attribute dynamically
+                // Update the id attribute dynamically
+                // Clear the file input value
+                input.name = '[' + rowIndex + '].style.Style_images[' + td.querySelectorAll('.image_block').length + '].Image_url';
+                if (input.type === 'file') {
+                    input.name = '[' + rowIndex + '].files[' + td.querySelectorAll('.image_block').length + '].file'; // Update the name attribute
+                    input.id = input.id.replace(/\d+$/, rowIndex) + '-' + td.querySelectorAll('.image_block').length; // Update the id attribute
+
+                    input.value = '';
+                    input.onchange = function () {
+                        var file = this.files[0];
+                        var imagePreview = this.parentElement.querySelector('img');
+                        if (file && imagePreview) {
+                            imagePreview.src = URL.createObjectURL(file);
+                        }
+                    };
+                }
+            });
+
+            // Update span elements
+            var spans = newBox.querySelectorAll('span');
+            spans.forEach(function (span) {
+                // Update the data-valmsg-for attribute dynamically
+                span.setAttribute('data-valmsg-for', '[' + rowIndex + '].files[' + td.querySelectorAll('.image_block').length + ']');
+            });
+
+            // Update img elements
+            var images = newBox.querySelectorAll('img');
+            images.forEach(function (image) {
+                // Update the id attribute dynamically
+                image.id = image.id.replace(/\d+$/, rowIndex) + '-' + td.querySelectorAll('.image_block').length; // Update the id attribute
+                image.src = '/images/noimage.png'; // Set default image source
+            });
+
+            td.appendChild(newBox); // Append the new box to the parent <td> element
+        }
+
+
+        function DeleteImg(btn) {
+            var box = btn.closest('.box'); // Find the closest parent .box element
+            var td = btn.closest('td'); // Find the closest parent <td> element
+            var tr = btn.closest('tr'); // Find the closest parent <tr> element
+            var rowIndex = tr.rowIndex - 1; // Get the row index (subtract 1 to account for the table header row)
+
+            box.remove(); // Remove the box element
+
+            // Update indexes of remaining items
+            var imageBlocks = td.querySelectorAll('.box');
+
+
+            for (var i = 0; i < imageBlocks.length; i++) {
+                var inputs = imageBlocks[i].querySelectorAll('input');
+                inputs.forEach(function (input) {
+                    // Update the name attribute dynamically
+                    // Update the id attribute dynamically
+                    input.name = '[' + rowIndex + '].style.Style_images[' + i + '].Image_url';
+                    if (input.type === 'file') {
+                        input.name = '[' + rowIndex + '].files[' + i + '].file'; // Update the name attribute
+                        input.id = input.id.replace(/\d+$/, rowIndex) + '-' + i; // Update the id attribute
+                    }
+                });
+
+                var spans = imageBlocks[i].querySelectorAll('span');
+                spans.forEach(function (span) {
+                    // Update the data-valmsg-for attribute dynamically
+                    span.setAttribute('data-valmsg-for', '[' + rowIndex + '].files[' + i + ']');
+                });
+
+                var images = imageBlocks[i].querySelectorAll('img');
+                images.forEach(function (image) {
+                    // Update the id attribute dynamically
+                    image.id = image.id.replace(/\d+$/, rowIndex) + '-' + i; // Update the id attribute
+                });
+            }
+        }
+
+
+
+    </script>
+
+
+
+
+}
+

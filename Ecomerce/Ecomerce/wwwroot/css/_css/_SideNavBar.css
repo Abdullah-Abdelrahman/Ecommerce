@@ -1,0 +1,120 @@
+﻿
+
+
+@keyframes gooeyEffect-1 {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(0.5, 1.5);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes gooeyEffect-2 {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(0.5, 1.5);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/* Repeat keyframes for other numbers if necessary */
+
+body {
+    background: #eaeef6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 5.5rem; /* Value of $spacer */
+    left: 1rem; /* Value of $spacer */
+    background: #fff;
+    border-radius: 10px; /* Value of $borderRadius */
+    padding: 1rem 0; /* Value of $spacer */
+    box-shadow: 0 0 40px rgba(0,0,0,0.03);
+    height: calc(100vh - 6rem); /* Calculation based on $spacer */
+    z-index: 100;
+}
+
+.navbar__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem; /* Value of $linkHeight */
+    width: 6.5rem; /* Calculation based on $spacer */
+    color: #6a778e; /* Value of $text */
+    transition: 250ms ease all; /* Value of $transition */
+}
+
+    .navbar__link span {
+        position: absolute;
+        left: 100%;
+        transform: translate(-3rem); /* Calculation based on $spacer */
+        margin-left: 1rem; /* Value of $spacer */
+        opacity: 0;
+        pointer-events: none;
+        color: #406ff3; /* Value of $primary */
+        background: #fff;
+        padding: 0.75rem; /* Calculation based on $spacer */
+        transition: 250ms ease all; /* Value of $transition */
+        border-radius: 17.5px; /* Calculation based on $borderRadius */
+    }
+
+    .navbar__link:hover {
+        color: #fff;
+    }
+
+        .navbar:not(:hover) .navbar__link:focus, .navbar__link:hover span {
+            opacity: 1;
+            transform: translate(0);
+        }
+
+.navbar__menu {
+    position: relative;
+}
+
+.navbar__item:last-child:before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    left: 1rem; /* Value of $spacer */
+    width: 3.5rem; /* Value of $linkHeight */
+    height: 3.5rem; /* Value of $linkHeight */
+    background: #406ff3; /* Value of $primary */
+    border-radius: 17.5px; /* Calculation based on $borderRadius */
+    transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all; /* Value of $timing */
+}
+
+.navbar__item:first-child:nth-last-child(1):hover,
+.navbar__item:first-child:nth-last-child(1):hover ~ .navbar__item,
+.navbar__item:last-child:hover:before {
+    opacity: 1;
+}
+
+/* Repeat nth-child styles for other numbers if necessary */
+
+.navbar__item:nth-child(1):hover,
+.navbar__item:nth-child(1):hover ~ .navbar__item:last-child:before {
+    top: 0;
+    animation: gooeyEffect-1 250ms 1;
+}
+
+.navbar__item:last-child:hover:before {
+    top: 300%;
+    animation: gooeyEffect-1 250ms 1;
+}

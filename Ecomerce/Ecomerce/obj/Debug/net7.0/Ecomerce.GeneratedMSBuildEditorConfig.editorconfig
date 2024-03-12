@@ -1,0 +1,177 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Ecomerce
+build_property.RootNamespace = Ecomerce
+build_property.ProjectDir = E:\All_of_my_projrcts\Ecomerce\Ecomerce\Ecomerce\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\All_of_my_projrcts\Ecomerce\Ecomerce\Ecomerce
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Account/AdminPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pblBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Account/AdminRegisteration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pblJlZ2lzdGVyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Account/OwnerPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxPd25lclBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Account/Registeration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlcmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Account/UserPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2VyUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/AddProductGenerall.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvZHVjdEdlbmVyYWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/AddQuantatity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUXVhbnRhdGl0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cY3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/Customers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3VzdG9tZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/HR.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSFIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/SetBlocks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2V0QmxvY2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/SetQuntatiy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2V0UXVudGF0aXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/SetStyles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2V0U3R5bGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Admin/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Cart/CartPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDYXJ0UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Cart/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja091dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Collections/AllCollections.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVjdGlvbnNcQWxsQ29sbGVjdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Collections/MenCollections.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVjdGlvbnNcTWVuQ29sbGVjdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Collections/NewCollections.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVjdGlvbnNcTmV3Q29sbGVjdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Collections/WomenCollections.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVjdGlvbnNcV29tZW5Db2xsZWN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Home/Help.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIZWxwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Product/getProductByIdAndStyleId.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxnZXRQcm9kdWN0QnlJZEFuZFN0eWxlSWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Role/AddAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Role/AddRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGRSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Shared/_BlockModelBobUpEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CbG9ja01vZGVsQm9iVXBFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Shared/_Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Shared/_my_layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9teV9sYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Shared/_SideNavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlTmF2QmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Shared/_StyleModelPobUpEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHlsZU1vZGVsUG9iVXBFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/All_of_my_projrcts/Ecomerce/Ecomerce/Ecomerce/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lou2f6d6mg

@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "Your account";
+    Layout = "_my_layout";
+}
+<link href="~/css/userpage.css" rel="stylesheet" />
+<h1 style="text-align:end;padding:0px 2rem 0px 0px;">Your account</h1>
+
+
+<div class="testimonials">
+
+    <div class="container">
+       
+        <div class="contant">
+            <div class="box" style="--background-imge:url(../images/UserPage/Preorder.png)" >
+                <h3>Your orders</h3>
+                <p>
+                    Track the order, return it, cancel it, upload the invoice or purchase again
+                </p>
+            </div>
+            <div class="box" style="--background-imge:url(../images/UserPage/premium.jpg)">
+                <h3>For me</h3>
+                <p>
+                    Manage your membership and view benefits and payment settings
+                </p>
+            </div>
+
+            <div class="box" style="--background-imge:url(../images/UserPage/PreQusetionspng.png)">
+                <h3>Pre-order questions</h3>
+                <p>
+                    Learn more about returns, cash on delivery and warranty
+                </p>
+            </div>
+            <div class="box" style="--background-imge:url(../images/UserPage/gift_card.png)">
+                <h3>Gift Card</h3>
+                <p>
+                    View the balance or redeem a card
+                </p>
+            </div>
+
+            <div class="box" style="--background-imge:url(../images/UserPage/payment.png)">
+                <h3>Your Payment</h3>
+                <p>
+                    Manage or add payment methods, and view your transactions
+                </p>
+            </div>
+
+            <div class="box" style="--background-imge:url(../images/UserPage/Messages.png)">
+                <h3>Your messages</h3>
+                <p>
+                    View or reply to messages from Amazon, sellers, and buyers
+                </p>
+            </div>
+
+            <div class="box" style="--background-imge:url(../images/UserPage/address.png)">
+                <h3>Your addresses</h3>
+                <p>
+                    Edit, remove, or set the default address
+                </p>
+            </div>
+
+            <div class="box" style="--background-imge:url(../images/UserPage/contact_us.png)">
+                <h3>Call us</h3>
+                <p>
+                    Browse self-service options, help articles, or contact us
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="btn btn-outline-danger" style="margin:2rem 0% 0px 45%;">
+
+        <a asp-action="Logout" asp-controller="Account">
+            Logout
+        </a>
+    </div>
+    
+</div>
+

@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<li class="icon">
+    @{
+
+        if (HttpContextAccessor.HttpContext.Session.GetString("ItemsCnt") != null)
+        {
+            <a asp-controller="Cart" asp-action="CartPage" id="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="CartText">@HttpContextAccessor.HttpContext.Session.GetString("ItemsCnt")</span>
+            </a>
+        }
+        else
+        {
+            <a asp-controller="Cart" asp-action="CartPage" id="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="CartText">0</span>
+            </a>
+        }
+    }
+
+    
+  
+
+</li>

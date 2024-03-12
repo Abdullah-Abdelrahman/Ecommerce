@@ -1,0 +1,70 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Products";
+    Layout = "_my_layout";
+}
+
+<h1 style="text-align:center;margin-bottom:2px;">Products</h1>
+
+<link href="~/css/ownerpage.css" rel="stylesheet" />
+
+<p style="text-align:center;color:gray">Here's your product!!</p>
+
+<div class="container" style="min-height:600px;">
+
+    <div style="flex-basis:15%"></div>
+
+    <partial name="_SideNavBar" />
+    <a asp-action="AddProductGenerall" asp-controller="Admin" style="position:absolute;top:0px;right:0px;">
+        <div class="btn btn-outline-success" style="height:fit-content">
+
+            Add Product
+        </div>
+    </a>
+   
+    <div class="container" style="display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;padding:2rem;margin-top:3rem">
+
+       
+            @for (int i = 0; i < Model?.Count(); i++)
+            {
+
+            <div class="card" style="width: 18rem;height:10rem;">
+                <div class="card-body">
+                    <h5 class="card-title">@Model[i].Product_name</h5>
+                
+                </div>
+                <ul class="list-group list-group-flush">
+                    
+                    
+                </ul>
+                <div class="card-body">
+                    <a class="card-link" style="color:greenyellow" asp-controller="Admin" asp-action="Update" asp-route-Product_Id="@Model[i].Product_Id">update</a>
+
+                    <a class="card-link text-info" asp-controller="Admin" asp-action="AddQuantatity" asp-route-Product_Id="@Model[i].Product_Id">Add to store</a>
+                    <a class="card-link text-danger" asp-controller="Admin" asp-action="Delete" asp-route-productId="@Model[i].Product_Id" asp-route-ProductName="@Model[i].Product_name">Delete</a>
+
+
+                </div>
+            </div>
+                    
+
+                
+
+            }
+
+
+
+       
+    </div>
+
+    
+    
+
+</div>
+
+
+
+

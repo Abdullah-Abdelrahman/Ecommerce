@@ -1,0 +1,160 @@
+﻿@using Ecomerce.SeessionModels;
+@{
+    @model List<BlockWithFile>
+    Layout = "_my_layout";
+
+}
+
+<link href="~/css/setblocks.css" rel="stylesheet" />
+
+<form id="Bform" enctype="multipart/form-data" asp-controller="Admin" asp-action="SetBlocks" method="post" style="display:grid;row-gap:40px;justify-items: center;margin-top:50px">
+    @for (int i = 0; i < Model?.Count(); i++)
+    {
+        <div class="block">
+
+            <div class="block_text" style="flex-basis:50%;">
+                <div >
+                    <input  asp-for="@Model[i].block.Block_title" class="Block_title" placeholder="TITLE of the block" />
+                    <br>
+                    <span asp-validation-for="@Model[i].block.Block_title" class="text-danger"></span>
+                </div>
+
+                <div style="height:100%">
+                    <textarea asp-for="@Model[i].block.Block_description" class="Block_description" placeholder="Description of the block"></textarea>
+                    <span asp-validation-for="@Model[i].block.Block_description" class="text-danger"></span>
+                </div>
+
+            </div>
+
+
+
+            <div class="block_img">
+                <div class="form-group">
+                    @*  <label asp-for="@Model[i].ImageFile" class="control-label"></label> *@
+                    <div class="custom-file">
+                        
+                        <input  asp-for="@Model[i].File" class="custom-file-input" id="customFile_@i"
+                               onchange="document.getElementById('PreviewPhoto_@i').src = window.URL.createObjectURL(this.files[0])" />
+
+                    </div>
+                    <span asp-validation-for="@Model[i].File" class="text-danger"></span>
+                    <input hidden asp-for="@Model[i].block.Block_image" type="text" value="@Model[i].block.Block_image" id="Block_image_@i" />
+                </div>
+                <div class="PreviewPhoto_block">
+
+                    @if (Model[i]?.block?.Block_image != null && Model[i]?.block?.Block_image != "")
+                    {
+                        <img class="PreviewPhoto" id="PreviewPhoto_@i" src="~/images/@Model[i].block?.Block_image" alt="Logo Image" />
+
+                    }
+                    else
+                    {
+                        <img class="PreviewPhoto" id="PreviewPhoto_@i" src="~/images/Site/no-image-icon-15.png" alt="Logo Image" />
+   
+                    }
+                </div>
+            </div>
+            <!--end-->
+            <!-- Button to remove this specific block -->
+            <button type="button" class="remove-button" onclick="removeBlock(this)">❌</button>
+        </div>
+    }
+
+    <button type="button" id="createBlock">➕ Add</button>
+    <input type="submit" value="Next" class="btn btn-primary" />
+    @{
+        int? v = @Model?.Count() - 1;
+         <input type="hidden" value="@v" id="lastStyleIndex" />
+    }
+   
+</form>
+
+@section Scripts{
+
+    <script>
+        // Define the createBlock function
+        // Define the createBlock function
+        // Define the createBlock function
+        function createBlock() {
+            var form = document.getElementById('Bform');
+            var blocs = form.getElementsByClassName('block');
+
+            var lastBlock = blocs[blocs.length - 1];
+            var newRow = lastBlock.cloneNode(true); // Clone the last block
+
+            // Update input names with new index
+            var lastrowIdx = document.getElementById('lastStyleIndex').value;
+            var nextrowIdx = parseInt(lastrowIdx) + 1;
+
+            var elements = newRow.querySelectorAll('input, textarea, select, img, span');
+            elements.forEach(function (element) {
+                var name = element.getAttribute('name');
+                if (name) {
+                    element.setAttribute('name', name.replace(/\[\d+\]/g, '[' + nextrowIdx + ']'));
+                }
+                var id = element.getAttribute('id');
+                if (id) {
+                    element.setAttribute('id', id.replace(/\d+$/, nextrowIdx));
+                }
+                var onchange = element.getAttribute('onchange');
+                if (onchange && element.tagName === 'INPUT') { // Only update onchange for input elements
+                    element.setAttribute('onchange', "document.getElementById('PreviewPhoto_" + nextrowIdx + "').src = window.URL.createObjectURL(this.files[0])");
+                }
+
+                var valMsgFor = element.getAttribute('data-valmsg-for');
+                if (valMsgFor) {
+                    element.setAttribute('data-valmsg-for', valMsgFor.replace(/\[\d+\]/g, '[' + nextrowIdx + ']'));
+                }
+            });
+
+          
+            // Insert the new row before the "Add" button
+            var addButton = document.getElementById('createBlock');
+            addButton.parentNode.insertBefore(newRow, addButton);
+
+            // Increment the lastStyleIndex value
+            document.getElementById('lastStyleIndex').value = nextrowIdx;
+        }
+
+
+
+        // Function to remove a specific block
+        function removeBlock(button) {
+            var blockToRemove = button.parentNode;
+            blockToRemove.parentNode.removeChild(blockToRemove);
+
+            // Update indexes of remaining blocks
+            var form = document.getElementById('Bform');
+            var blocs = form.getElementsByClassName('block');
+            for (var i = 0; i < blocs.length; i++) {
+                var elements = blocs[i].querySelectorAll('input, textarea, select, img, span');
+                elements.forEach(function (element) {
+                    var name = element.getAttribute('name');
+                    if (name) {
+                        element.setAttribute('name', name.replace(/\[\d+\]/g, '[' + i + ']'));
+                    }
+                    var id = element.getAttribute('id');
+                    if (id) {
+                        element.setAttribute('id', id.replace(/\d+$/, i));
+                    }
+                    var onchange = element.getAttribute('onchange');
+                    if (onchange && element.tagName === 'INPUT') { // Only update onchange for input elements
+                        element.setAttribute('onchange', "document.getElementById('PreviewPhoto_" + i + "').src = window.URL.createObjectURL(this.files[0])");
+                    }
+
+                    var valMsgFor = element.getAttribute('data-valmsg-for');
+                    if (valMsgFor) {
+                        element.setAttribute('data-valmsg-for', valMsgFor.replace(/\[\d+\]/g, '[' + i + ']'));
+                    }
+                });
+            }
+            // Decrement the lastStyleIndex value
+            document.getElementById('lastStyleIndex').value = blocs.length - 1;
+        }
+
+        // Attach the event listener to the "Add" button
+        document.getElementById('createBlock').addEventListener('click', createBlock);
+    </script>
+
+
+}

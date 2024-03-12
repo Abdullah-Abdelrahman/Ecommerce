@@ -1,0 +1,141 @@
+﻿.product-container{
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+.product-text {
+    flex-basis: 30%;
+    padding: 20px;
+}
+
+.product-images {
+    flex-basis: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 0.9fr));
+    grid-gap: 20px;
+    padding:20px;
+}
+
+
+
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 0.9fr));
+    grid-gap: 8px;
+    padding: 8px;
+}
+.option-box {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 51%);
+}
+.option-box img{
+    width:100%;
+
+}
+
+
+
+/*this datalist animate bootstrap class*/
+.btn-block{
+    width:100%;
+}
+
+
+
+.Sizes {
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 0.9fr));
+    grid-gap: 8px;
+    padding: 8px;
+}
+
+
+.size-box {
+    display: inline-block;
+    border: 1px solid #6c757d; /* Thin border with a cool color */
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow:hidden;
+}
+
+
+.size-box label {
+    display: block;
+    width: 100%;
+    padding:10px;
+}
+/* Styling the radio button to be hidden */
+.size-box input[type="radio"] {
+    display: none;
+}
+
+        /* Styling the lapel button when radio button is checked */
+.size-box input[type="radio"]:checked + label {
+    background-color: #6c757d; /* Cool color when pressed */
+    color: #fff;
+    border-color: #6c757d;
+}
+
+
+
+
+
+
+
+
+.product-description{
+    margin-top:10px;
+  text-align:center;
+}
+
+
+
+
+
+.block {
+    position: relative;
+    max-width: 100%;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-text {
+    padding: 100px 60px 50px 60px;
+    flex-basis: 50%;
+    
+}
+
+.Block-title {
+    font-weight:bold;
+}
+
+.Block-description {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+    vertical-align: top;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: .06rem;
+    color: rgb(18, 48, 38);
+    opacity: 0.7;
+}
+
+.block-image {
+    flex-basis: 50%;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}

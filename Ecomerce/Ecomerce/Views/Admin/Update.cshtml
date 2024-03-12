@@ -1,0 +1,359 @@
+﻿@using Ecomerce.SeessionModels;
+@model Product
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1 style="text-align:center;">Update</h1>
+<hr />
+
+
+
+<link href="~/css/getproductbyid.css" rel="stylesheet" />
+<link href="~/css/update.css" rel="stylesheet" />
+<div class="container">
+
+   
+
+    <div class="product-container">
+      
+      
+        
+        <!-- Button trigger modal for update General Info -->
+        <button id="openGIButton" class="general-u-button" type="button" data-toggle="modal" data-target="#exampleModal">
+            Update
+        </button>
+
+        <!-- Modal update General Info-->
+        <div class="modal fade" id="GIModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <form asp-action="UpdateGeneral" method="post">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit General Info</h5>
+                            <button type="button" class="close" id="closeGIButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <input hidden asp-for="Product_Id" value="@Model?.Product_Id" />
+                        <div class="box">
+                            <label asp-for="Product_name" class="form-label"></label>
+                            <input type="text" asp-for="Product_name" class="form-control" placeholder="Enter product name" />
+                            <span asp-validation-for="Product_name" class="text-danger"></span>
+                        </div>
+
+
+                        <div class="box">
+
+                            <label asp-for="Product_description" class="form-label"></label>
+                            <input type="text" asp-for="Product_description" class="form-control" placeholder="Enter product description" />
+                            <span asp-validation-for="Product_description" class="text-danger"></span>
+                        </div>
+
+                        <div class="box">
+
+                            <label asp-for="Product_rate" class="form-label"></label>
+                            <input type="text" asp-for="Product_rate" class="form-control" placeholder="Enter product rate" />
+                            <span asp-validation-for="Product_rate" class="text-danger"></span>
+                        </div>
+
+
+                        <div class="box">
+
+                            <label asp-for="Product_Categoriys" class="form-label"></label>
+                            @*  <select asp-for="Product_Categoriys" asp-items="Model.Product_Categoriys" class="form-control" placeholder="Enter product description">
+                            <option></option>
+                            </select> *@
+                            <span asp-validation-for="Product_Categoriys" class="text-danger"></span>
+                        </div>
+
+
+                        <div class="box">
+
+                            <label asp-for="Product_sizes" class="form-label"></label>
+                            @*  <select asp-for="Product_sizes" asp-items="Model.Product_sizes" class="form-control" placeholder="Enter product description">
+                            <option></option>
+                            </select> *@
+                            <span asp-validation-for="Product_sizes" class="text-danger"></span>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                         <button type="button" id="MaincloseGIButton" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="submit" id="SaveGIButton"  class="btn btn-primary">Save changes</button>
+                    </div>
+
+                </form>
+                </div>
+            </div>
+        </div>
+
+
+
+       
+        <div class="product-text">
+            <p class="product-company-logo" style="color:darkgray;">AAA</p>
+            <div class="product-title">
+                <h1>@Model.Product_name</h1>
+            </div>
+
+            <div style="justify-content: flex-start;">
+                <!-- BEGIN app snippet: star_rating -->
+
+                <div class="spr-stars">
+                </div>
+                <!-- END app snippet -->
+
+                <div class="spr-stars" style="color:darkgray;">
+                    No reviews
+                </div>
+
+            </div>
+            <div class="price-container">
+                <div class="price-regular">
+                    <span class="price-item price-item-regular">
+                        LE @Model?.Product_styles?[0]?.Style_price.00 EGP
+                    </span>
+                </div>
+            </div>
+            <p style="color:darkgray;font-size: small;">
+                <a href="#" style="text-decoration:underline;color:darkgray">Shipping</a>
+                calculated at checkout.
+            </p>
+
+            <p>
+                Options
+            </p>
+            <partial name="_StyleModelPobUpEdit" model="@new List<StyleWithFiles>(){new StyleWithFiles (){ style=new Style(), files = new List<FileOfImage> {
+        new FileOfImage(),
+        new FileOfImage(),
+        new FileOfImage(),
+        new FileOfImage()}
+    }}">
+            <div class="options">
+
+
+                @for (int i = 0; i < Model?.Product_styles?.Count(); i++)
+                {
+
+                    <div class="option-box">
+                            <button class="general-u-button" style="width:2rem;height:2rem;top:-1rem;
+                                right: -1rem;
+                                font-size: 0.8rem;
+                                line-height:2px;" 
+                                id="openStyleButton"  type="button" onclick="EditStyle(@Model.Product_styles[i].Style_Id)">
+                                Up
+                            </button>
+
+                            <img style="border-radius:6px" src="~/images/@Model?.Product_styles?[i].Style_images?[0]?.Image_url">
+                        
+
+                    </div>
+
+
+                }
+
+
+            </div>
+
+
+            <p>
+                Size
+            </p>
+            <div class="Sizes">
+
+
+                @for (int i = 0; i < Model?.Product_sizes?.Count(); i++)
+                {
+
+                    <div class="size-box">
+                        <input type="radio" id="size_@i" name="size" value="@Model.Product_sizes[i].SizeId">
+                        <label for="size_@i">@Model?.Product_sizes[i].size.size</label>
+
+                    </div>
+
+
+                }
+            </div>
+
+            <button type="button"
+                    
+                    class="btn btn-outline-info btn-lg btn-block">
+                Add to cart
+            </button>
+
+            <div class="product-description">
+                <p style="color: #305d60d4;">
+                    @Model?.Product_description
+                </p>
+            </div>
+
+        </div>
+
+        <div class="product-images">
+            @for (int i = 0; i < Model?.Product_styles?[0]?.Style_images?.Count(); i++)
+            {
+                <div>
+                    <img style="width:100%;" src="~/images/@Model?.Product_styles[0]?.Style_images?[i]?.Image_url">
+                </div>
+
+            }
+
+        </div>
+
+
+    </div>
+
+    <partial name="_BlockModelBobUpEdit" model="@new Block(){}">
+
+  @{
+  
+    for (int i=0;i<Model?.Product_blocks?.Count();i++)
+    {
+
+        if (i % 2 == 0)
+        {
+
+
+                         <div class="block">
+
+                                <!-- Button trigger modal for update General Info -->
+                                <button id="openBlockButton" class="general-u-button" type="button" onclick="EditBlock(@Model.Product_blocks[i].Block_Id)">
+                                    Update
+                                </button>
+
+                                <!-- Modal update Blocl Info-->
+
+                             <div class="block-image">
+
+                                <img src="~/images/@Model.Product_blocks[i].Block_image" style="max-width:100%">
+                             </div>
+                             <div class="block-text">
+                                 <h2 class="Block-title">@Model.Product_blocks[i].Block_title</h2>
+                                 <p class="Block-description">
+                                     @Model.Product_blocks[i].Block_description
+                                 </p>
+                             </div>
+
+
+                         </div>
+        }
+        else
+        {
+                         <div class="block" style="flex-direction:row-reverse;">
+                                    <button id="openBlockButton" class="general-u-button" type="button" onclick="EditBlock(@Model.Product_blocks[i].Block_Id)" style="left:0px;">
+                                        Update
+                                    </button>
+                             <div class="block-image">
+
+                                 <img src="~/images/@Model.Product_blocks[i].Block_image" style="max-width:100%">
+                             </div>
+                             <div class="block-text">
+                                 <h2 class="Block-title">@Model.Product_blocks[i].Block_title</h2>
+                                 <p class="Block-description">
+                                        @Model.Product_blocks[i].Block_description
+                                 </p>
+                             </div>
+
+
+                         </div>
+        }
+        
+
+    }
+   }
+</div>
+
+
+<script type="text/javascript">
+
+  
+
+    function EditBlock(id){
+        $.ajax({
+
+            url: 'UpdateBlock?Block_Id=' + id,
+            type: 'get',
+            contentType: 'application/json;charset=utf-8',
+            datatype: 'json',
+            success: function (response) {
+                if (response == null || response == undefined) {
+                    alert("Unable to read the data.");
+                }
+                else if (response.length == 0) {
+                    alert("there is an proplem with the id");
+                }
+                else {
+                   
+                    
+                    $('#BlockModal').modal('show');
+                    $('#blockProductId').val(response.product_Id);
+                    $('#PobUbBlock_Id').val(response.block_Id);
+                    $('#PobUbBlock_title').val(response.block_title);
+                    $('#PobUbBlock_description').val(response.block_description);
+                    $('#PobUbBlock_image').val(response.block_image);
+                    var image= $('#PreviewPhoto_');
+                    image.attr('src', '/images/' + response.block_image);
+                   
+                }
+            },
+            error: function () {
+                alert("Unable to read the data 2.");
+            }
+
+
+        });
+    }
+
+
+    function EditStyle(id) {
+        $.ajax({
+           
+            url: 'UpdateStyle?Style_Id=' + id,
+            type: 'get',
+            contentType: 'application/json;charset=utf-8',
+            datatype: 'json',
+            success: function (response) {
+                if (response == null || response == undefined) {
+                    alert("Unable to read the data.");
+                   
+                }
+                else if (response.length == 0) {
+                    alert("there is an proplem with the id");
+                 
+                }
+                else {
+
+
+                    $('#StyleModal').modal('show');
+                    $('#StyleProductId').val(response.product_Id);
+                    $('#PobUbStyle_Id').val(response.style_Id);
+                    $('#PobUbStyle_title').val(response.style_name);
+                    $('#PobUbStyle_Price').val(response.style_price);
+                   
+               
+                    // Bind style images to the block_img elements
+                    for (var i = 0; i < response.style_images.length; i++) {
+                        $('#PreviewPhoto_' + i).attr('src', '/images/' + response.style_images[i].image_url);
+                        // Optionally, you can also set the corresponding hidden input value
+                        
+                        
+                        $('#PobUbStyle_image_' + i).val(response.style_images[i].image_url);
+                    }
+
+                }
+            },
+            error: function () {
+                
+                alert("Unable to read the data 2.");
+            }
+
+
+        });
+    }
+
+</script>

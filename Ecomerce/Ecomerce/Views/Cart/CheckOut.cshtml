@@ -1,0 +1,146 @@
+﻿@model CheckOutViewModel
+@{
+    ViewData["Title"] = "CheckOut";
+    Layout = "_Layout";
+    decimal total = 0;
+}
+
+<h1 style="text-align:center">CheckOut</h1>
+
+<div class="container-fluid">
+    <form asp-action="CheckOut" asp-controller="Cart" method="post">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="p-3" style="display:grid;grid-gap:10px">
+                    <!-- Content of the first div goes here -->
+                    <label asp-for="@Model.customer.Email">Contact</label>
+
+                    <input class="form-control" asp-for="@Model.customer.Email" value="@Model?.customer?.Email" placeholder="Email" />
+                    <span asp-validation-for="@Model.customer.Email" class="text-danger"></span>
+
+                    <label asp-for="@Model.customer.Country">Shipping address</label>
+                    <input class="form-control" asp-for="@Model.customer.Country" value="@Model?.customer?.Country" placeholder="Country"/>
+                    <span asp-validation-for="@Model.customer.Country" class="text-danger"></span>
+
+
+                    <input class="form-control" asp-for="@Model.customer.FirstName" value="@Model?.customer?.FirstName" placeholder="First Name" />
+                    <span asp-validation-for="@Model.customer.FirstName" class="text-danger"></span>
+
+                    <input class="form-control" asp-for="@Model.customer.LastName" value="@Model?.customer?.LastName" placeholder="Last Name" />
+                    <span asp-validation-for="@Model.customer.LastName" class="text-danger"></span>
+
+                    <input class="form-control" asp-for="@Model.customer.Address" value="@Model?.customer?.Address" placeholder="Address" />
+                    <span asp-validation-for="@Model.customer.Address" class="text-danger"></span>
+
+                    <input class="form-control" asp-for="@Model.customer.City" value="@Model?.customer?.City" placeholder="City" />
+                    <span asp-validation-for="@Model.customer.City" class="text-danger"></span>
+
+                    <input class="form-control" asp-for="@Model.customer.Governorate" value="@Model?.customer?.Governorate" placeholder="Governorate" />
+                    <span asp-validation-for="@Model.customer.Governorate" class="text-danger"></span>
+
+                    <input class="form-control" asp-for="@Model.customer.PostalCode" value="@Model?.customer?.PostalCode" placeholder="Postal Code" />
+                    <span asp-validation-for="@Model.customer.PostalCode" class="text-danger"></span>
+
+                    <input class="form-control" asp-for="@Model.customer.PhoneNumber" value="@Model?.customer?.PhoneNumber" placeholder="Phone"/>
+                    <span asp-validation-for="@Model.customer.PhoneNumber" class="text-danger"></span>
+
+
+                    <input class="form-check-input" asp-for="@Model.customer.IsNewsOn"  />
+                    @Html.DisplayNameFor(model => model.customer.IsNewsOn)
+
+                </div>
+            </div>
+
+
+
+            <div class="col-md-6">
+                <div class="bg-secondary p-3">
+                    <div style="padding:2.5rem;">
+
+                        <table class="table cart-items" style="width:100%;">
+
+                            <thead class="right">
+                                <tr>
+                                    <th colspan="3" scope="col">PRODUCT</th>
+                                    <th colspan="1" scope="col" class="right">QUANTITY</th>
+                                    <th colspan="1" scope="col" class="right">TOTAL</th>
+                                </tr>
+
+
+                            </thead>
+
+
+                            <tbody>
+                                @for (int i = 0; i < @Model.shopings?.Count(); i++)
+                                {
+
+                                    total += Model.shopings[i].price;
+
+                                    <tr class="cart-item" style="width:100%">
+                                        <td colspan="1" class="cart-item__media">
+
+                                            <input type="hidden" asp-for="@Model.shopings[i].productId" value="@Model.shopings[i].productId" />
+                                            <input type="hidden" asp-for="@Model.shopings[i].StyleId" value="@Model.shopings[i].StyleId" />
+                                            <input type="hidden" asp-for="@Model.shopings[i].StyleName" value="@Model.shopings[i].StyleName" />
+                                            <input type="hidden" asp-for="@Model.shopings[i].sizeId" value="@Model.shopings[i].sizeId" />
+                                            <input type="hidden" asp-for="@Model.shopings[i].price" value="@Model.shopings[i].price" />
+
+
+                                            <div class="cart-item__image-container" style="max-width: 100px;">
+                                                <img src="~/images/@Model.shopings[i].ImageUrl" class="cart-item__image img-thumbnail img-fluid" alt="" loading="lazy" width="90" height="90">
+
+                                            </div>
+
+
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            <div style="margin-left:2rem;">
+                                                <p style="font-weight:bold;font-size:0.8rem;margin-bottom:0px">@Model.shopings[i].productName in @Model.shopings[i].StyleName</p>
+
+                                                <p style="font-size:0.6rem;color:darkgray"> @Model.shopings[i].Size</p>
+                                            </div>
+                                        </td>
+
+                                        <td colspan="1" style="text-align:right">
+                                            <p>1</p>
+                                            <input type="hidden" asp-for="@Model.shopings[i].quantity" value="1" />
+
+                                        </td>
+                                        <td colspan="1" style="text-align:right">
+                                            <p>LE @Model.shopings[i].price</p>
+                                            <input type="hidden" asp-for="@Model.shopings[i].Total" value="@Model.shopings[i].price" />
+                                        </td>
+                                    </tr>
+
+                                }
+
+
+                            </tbody>
+
+
+                        </table>
+                        <div style="display:flex;flex-direction:column;align-content:end;justify-content:end;align-items: flex-end;">
+                            <p style="text-align:right"> Subtotal LE @total EGP</p>
+                        </div>
+
+                        <input value="Buy" class="btn btn-outline-primary" style="height:fit-content" type="submit" style="position:absolute;">
+                           
+                       
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+</div>
+

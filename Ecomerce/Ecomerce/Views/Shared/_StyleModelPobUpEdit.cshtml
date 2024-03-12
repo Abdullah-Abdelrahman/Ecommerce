@@ -1,0 +1,72 @@
+﻿@using Ecomerce.SeessionModels;
+@model List<StyleWithFiles>
+
+
+
+<div class="modal fade" id="StyleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="Sform" enctype="multipart/form-data" asp-controller="Admin" asp-action="UpdateStyle" method="post">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Style</h5>
+                    <button type="button" class="close" id="closeStyleButton" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <input hidden asp-for="@Model[0].style.Product_Id" id="StyleProductId" />
+                    <input hidden asp-for="@Model[0].style.Style_Id" id="PobUbStyle_Id" />
+
+                    <div>
+                        <input asp-for="@Model[0].style.Style_name" id="PobUbStyle_title" class="form-control" placeholder="Style name" />
+                        <br>
+                        <span asp-validation-for="@Model[0].style.Style_name" class="text-danger"></span>
+                    </div>
+
+                    <div style="height:100%">
+                        <input asp-for="@Model[0].style.Style_price" id="PobUbStyle_Price" class="form-control" placeholder="Style Price" />
+                        <span asp-validation-for="@Model[0].style.Style_price" class="text-danger"></span>
+                    </div>
+                    <div class="" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));grid-gap:5px;">
+                        @for(int i = 0,x=0; i < Model[0].files.Count(); i++)
+                        {
+                            
+                            
+                            <div class="block_img" style="width:50%">
+                                <div class="form-group">
+                                    <label for="" class="control-label"></label>
+                                    <div class="custom-file">
+
+                                        <input asp-for="@Model[x].files[i].file" type="file" class="custom-file-input" id="customFile_@i" value=""
+                                               onchange="document.getElementById('PreviewPhoto_@i').src = window.URL.createObjectURL(this.files[0])" type="file"/>
+
+                                    </div>
+
+                                    <input hidden asp-for="@Model[x].style.Style_images[i].Image_url" id="PobUbStyle_image_@i" type="text"  />
+                                </div>
+                                <div class="">
+
+                                        <img class="PreviewPhoto img-thumbnail" id="PreviewPhoto_@i" src="~/images/Site/no-image-icon-15.png" alt="Logo Image" />
+
+                                    
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <input type="checkbox" name="delete" value="true" id="DeleteStyleButton" class="btn btn-danger">
+                    <input type="hidden" value="false" name="delete" />
+                    <label class="form-check-label" for="delete">Delete Style</label>
+                    <button type="button" id="MaincloseStyleButton" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" id="SaveStyleButton" class="btn btn-primary">Save changes</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

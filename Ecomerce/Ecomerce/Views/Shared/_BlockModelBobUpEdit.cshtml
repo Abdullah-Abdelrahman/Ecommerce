@@ -1,0 +1,70 @@
+﻿@model Block
+
+
+
+<div class="modal fade" id="BlockModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form asp-controller="Admin" asp-action="UpdateBlock" enctype="multipart/form-data" method="post">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Block</h5>
+                    <button type="button" class="close" id="closeBlockButton" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <input hidden asp-for="@Model.Product_Id" id="blockProductId"  />
+                    <input hidden asp-for="Block_Id" id="PobUbBlock_Id"  />
+
+                    <div>
+                        <input asp-for="Block_title" id="PobUbBlock_title" class="form-control" placeholder="TITLE of the block" />
+                        <br>
+                        <span asp-validation-for="Block_title" class="text-danger"></span>
+                    </div>
+
+                    <div style="height:100%">
+                        <textarea asp-for="Block_description" id="PobUbBlock_description" class="form-control" placeholder="Description of the block"></textarea>
+                        <span asp-validation-for="Block_description" class="text-danger"></span>
+                    </div>
+
+                    <div class="block_img">
+                        <div class="form-group">
+                            <label for="" class="control-label"></label>
+                            <div class="custom-file">
+                                <input type="file" name="ImageFile" class="custom-file-input" 
+                                       onchange="document.getElementById('PreviewPhoto_@Model.Block_Id').src = window.URL.createObjectURL(this.files[0])" />
+
+                            </div>
+
+                            <input hidden asp-for="Block_image" id="PobUbBlock_image" type="text" value="@Model.Block_image" />
+                        </div>
+                        <div class="">
+
+                            @if (Model.Block_image != null && Model?.Block_image != "")
+                            {
+                                <img class="PreviewPhoto img-thumbnail" id="PreviewPhoto_@Model.Block_Id" src="~/images/@Model?.Block_image" alt="Logo Image" />
+
+                            }
+                            else
+                            {
+                                <img class="PreviewPhoto img-thumbnail" id="PreviewPhoto_@Model.Block_Id" src="~/images/Site/no-image-icon-15.png" alt="Logo Image" />
+
+                            }
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <input type="checkbox" name="delete" value="true" id="DeleteBlockButton" class="btn btn-danger">
+                    <input type="hidden" value="false" name="delete" />
+                    <label class="form-check-label" for="delete">Delete Block</label>
+                    <button type="button" id="MaincloseBlockButton" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" id="SaveBlockButton" class="btn btn-primary">Save changes</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

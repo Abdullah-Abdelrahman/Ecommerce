@@ -1,0 +1,22 @@
+﻿.cat {
+	width: 70px;
+	border-radius: 50% 10%;
+}
+.siz {
+	width: 70px;
+	border-radius: 50% 10%;
+}
+
+
+
+
+.container .box{
+	width:50%;
+	margin-bottom:0.6rem;
+}
+.btn{
+	width:10%;
+	margin-left:45%;
+}
+
+

@@ -1,0 +1,62 @@
+﻿@model List<StyleSize>
+
+@{
+    ViewData["Title"] = "SetQuntatiy";
+    Layout = "_my_layout";
+}
+
+<h1>SetQuntatiy</h1>
+
+
+<hr />
+<link href="~/css/setquntatiy.css" rel="stylesheet" />
+<div class="row">
+
+    <form asp-action="SetQuntatiy" method="post">
+
+            <div class="container quantity_block ">
+
+                @for(int i = 0; i < Model?.Count(); i++)
+                {
+                   
+                    
+                     <div>
+
+                         <div class="form-group">
+                             <label asp-for="@Model[i].Style.Style_name" class="control-label">Style</label>
+                             <input readonly asp-for="@Model[i].Style.Style_name" value="@Model[i]?.Style?.Style_name" class=" form-control" />
+                           
+
+
+                         </div>
+                         <div class="form-group">
+                             <label asp-for="@Model[i].size.size" class="control-label">Size</label>
+                             <input readonly asp-for="@Model[i].size.size" value="@Model[i]?.size?.size" class=" form-control" />
+                             <input readonly asp-for="@Model[i].size.SizeID" hidden class=" form-control" />
+                             <input readonly asp-for="@Model[i].SizeId" hidden class=" form-control" />
+                         </div>
+                         <div class="form-group">
+                             <label asp-for="@Model[i].quantity" class="control-label">Quantity</label>
+                             <input asp-for="@Model[i].quantity" class="form-control" value="@Model[i]?.quantity" />
+                             <span asp-validation-for="@Model[i].quantity" class="text-danger"></span>
+                         </div>
+
+                     </div>
+
+                  
+                    
+                }
+
+            </div>
+            <div class="form-group" style="display:flex;align-items:center;justify-content:center">
+                <input type="submit" value="next" class="btn btn-primary" />
+            </div>
+        </form>
+  
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,101 @@
+﻿@using Ecomerce.ViewModels;
+@model List<ShopingCartItemViewModel>
+@{
+    ViewData["Title"] = "CartPage";
+    Layout = "_my_layout";
+    decimal total = 0;
+}
+<link href="~/css/cart.css" rel="stylesheet" />
+<div class="heading" style="    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;padding:3rem;">
+    <p  style="font-size:3rem;">Your cart</p>
+    <a style="text-decoration:underline" asp-action="NewCollections" asp-controller="Collections">Continue shopping</a>
+</div>
+
+<div style="padding:2.5rem;">
+    <form asp-controller="Cart" asp-action="CheckOut" method="get">
+
+        <table class="table cart-items" style="width:100%;">
+
+            <thead class="right">
+                <tr>
+                    <th colspan="3" scope="col">PRODUCT</th>
+                    <th colspan="1" scope="col" class="right">QUANTITY</th>
+                    <th colspan="1" scope="col" class="right">TOTAL</th>
+                </tr>
+
+
+            </thead>
+
+
+            <tbody>
+                @for (int i = 0; i < Model?.Count(); i++)
+                {
+
+                    total += Model[i].price;
+
+                    <tr class="cart-item" style="width:100%">
+                        <td colspan="1" class="cart-item__media">
+
+                            <input type="hidden" asp-for="@Model[i].productId" value="@Model[i].productId" />
+                            <input type="hidden" asp-for="@Model[i].StyleId" value="@Model[i].StyleId" />
+                            <input type="hidden" asp-for="@Model[i].StyleName" value="@Model[i].StyleName" />
+
+                            <div class="cart-item__image-container">
+                                <img src="~/images/@Model[i].ImageUrl" class="cart-item__image" alt="" loading="lazy" width="150" height="150">
+
+                            </div>
+                            <div style="margin-left:2rem;">
+                                <h3>@Model[i].productName in @Model[i].StyleName</h3>
+                                <input type="hidden" asp-for="@Model[i].productName" value="@Model[i].productName" />
+
+                                <p>LE @Model[i].price</p>
+                                <input type="hidden" asp-for="@Model[i].price" value="@Model[i].price" />
+
+                                <p>Size: @Model[i].Size</p>
+                                <input type="hidden" asp-for="@Model[i].sizeId" value="@Model[i].sizeId" />
+
+                            </div>
+
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+
+                        <td colspan="1" style="text-align:right">
+                            <p>1</p>
+                            <input type="hidden" asp-for="@Model[i].quantity" value="1" />
+
+                        </td>
+                        <td colspan="1" style="text-align:right">
+                            <p>LE @Model[i].price</p>
+                            <input type="hidden" asp-for="@Model[i].Total" value="@Model[i].price" />
+                        </td>
+                    </tr>
+
+                }
+
+
+            </tbody>
+
+
+        </table>
+        <div style="display:flex;flex-direction:column;align-content:end;justify-content:end;align-items: flex-end;">
+            <p style="text-align:right"> Subtotal LE @total EGP</p>
+            <input class="btn btn-info" style="color:white;width:20rem;" type="submit" value="Check Out" />
+
+         
+        </div>
+
+    </form>
+   
+   
+
+</div>
+
+
+

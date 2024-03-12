@@ -1,0 +1,113 @@
+﻿
+.remove-button {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%; /* Circle shape */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 30px;
+    height: 30px;
+    line-height: 1; /* Centering the X */
+}
+
+.remove-button:hover {
+    background-color: #d32f2f; /* Darker Red */
+}
+
+/* Styles for the Add button */
+#createBlock {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px; /* Rounded shape */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#createBlock:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+
+
+
+.block {
+    position: relative;
+    max-width: 100%;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    height: 450px;
+}
+
+.block_text {
+    padding: 100px 60px 50px 60px;
+    flex-basis: 50%;
+}
+
+.Block_title {
+    border: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 20px;
+    background-color: white !important;
+}
+
+.Block_description {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+    vertical-align: top;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: .06rem;
+    color: rgb(18, 48, 38);
+    opacity: 0.7;
+}
+
+.remove-button {
+    position: absolute;
+    top: -3%;
+    right: 0%;
+}
+
+.block_img {
+    flex-basis: 50%;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.custom-file {
+    position: absolute;
+    top: -30px;
+}
+
+.PreviewPhoto_block {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.PreviewPhoto {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
+}

@@ -1,0 +1,100 @@
+﻿@model List<Order>
+@{
+    ViewData["Title"] = "Orders";
+}
+
+<h1 style="text-align:center;margin-bottom:2px;margin-top:2rem;">Orders</h1>
+<link href="~/css/ownerpage.css" rel="stylesheet" />
+
+
+<div class="container" style="min-height:600px">
+    <partial name="_SideNavBar" />
+    <div style="flex-basis:15%"></div>
+    <table class="table table-striped table-dark">
+
+        <thead>
+            <tr>
+                <th>
+                    OrderId
+                </th>
+                <th>
+                    Order Date
+                </th>
+                <th>
+                    Order Deleted
+                </th>
+                <th>
+                    Order CustomerId
+                </th>
+                <th>
+                    OrderDetailsId
+                </th>
+                <th>
+                    Product Id
+                </th>
+                <th>
+                    Style Id
+                </th>
+                <th>
+                    Size Id
+                </th>
+                <th>
+                   Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @{
+                for(int i = 0; i < Model.Count(); i++)
+                {
+                    foreach(var od in Model[i].OrderDetails)
+                    {
+                        <tr>
+                            <td>
+                                @Model[i].OrderId
+                            </td>
+                            <td>
+                                @Model[i].OrderDate
+                            </td>
+                            <td>
+                                @Model[i].Deleted
+                            </td>
+                            <td>
+                                @Model[i].CustomerId
+                            </td>
+                            <td>
+                                @od.OrderDetailsId
+                            </td>
+                            <td>
+                                @od.ProductId
+                            </td>
+                            <td>
+                                @od.StyleId
+                            </td>
+                            <td>
+                                @od.SizeId
+                            </td>
+                            <td>
+                                @od.Price
+                            </td>
+                        
+                        </tr>
+                   
+                        
+                    }
+                   
+                }
+            }
+
+
+
+
+        </tbody>
+
+
+
+    </table>
+
+
+</div>

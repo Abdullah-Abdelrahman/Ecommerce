@@ -1,0 +1,246 @@
+﻿@using Ecomerce.ViewModels;
+@model ProductStyleIndexViewModel
+
+@{
+    ViewData["Title"] = "Product Details";
+    Layout = "_my_layout";
+}
+
+
+<link href="~/css/getproductbyid.css" rel="stylesheet" />
+<div class="container">
+
+    @{
+        if (User.IsInRole("Admin") || User.IsInRole("Owner"))
+        {
+            <div style="position:absolute;top:0px;right:0px;display:flex;flex-direction:row">
+
+                <a asp-action="Update" asp-controller="Admin" asp-route-Product_Id="@Model.product.Product_Id">
+                    <div style="padding:5px;background-color:bisque;border-radius:20px;">
+                        Update
+                    </div>
+
+                </a>
+
+                <a asp-action="Delete" asp-controller="Admin" asp-route-productId="@Model.product.Product_Id" asp-route-ProductName="@Model.product.Product_name">
+                    <div style="padding:5px;background-color:red;border-radius:20px;">
+                        Delete
+                    </div>
+
+                </a>
+            
+            </div>
+          
+        }
+    }
+
+    <div class="product-container">
+        <div class="product-text">
+            <p class="product-company-logo" style="color:darkgray;">AAA</p>
+            <div class="product-title">
+                <h1>@Model.product.Product_name</h1>
+            </div>
+
+            <div style="justify-content: flex-start;">
+                <!-- BEGIN app snippet: star_rating -->
+
+                <div class="spr-stars">
+                </div>
+                <!-- END app snippet -->
+
+                <div class="spr-stars" style="color:darkgray;">
+                    No reviews
+                </div>
+
+            </div>
+            <div class="price-container">
+                <div class="price-regular">
+                    <span class="price-item price-item-regular">
+                        LE @Model?.product?.Product_styles?[@Model.sid]?.Style_price.00 EGP
+                    </span>
+                </div>
+            </div>
+            <p style="color:darkgray;font-size: small;">
+                <a href="#" style="text-decoration:underline;color:darkgray">Shipping</a>
+                calculated at checkout.
+            </p>
+
+            <p>
+                Options
+            </p>
+            <div class="options">
+
+
+                @for (int i = 0; i < Model?.product.Product_styles?.Count(); i++)
+                {
+
+                    <div class="option-box">
+                        <a asp-action="getProductByIdAndStyleId" asp-route-id="@Model?.product.Product_Id" asp-route-sid="@i">
+                            <img src="~/images/@Model?.product.Product_styles?[i]?.Style_images.FirstOrDefault()?.Image_url">
+                        </a>
+
+                    </div>
+
+
+                }
+
+
+            </div>
+
+
+            <p>
+                Size
+            </p>
+            <div class="Sizes">
+
+
+                @for (int i = 0; i < Model?.product?.Product_sizes?.Count(); i++)
+                {
+                    <div class="size-box">
+                        <input type="radio" id="size_@i" name="size" value="@Model.product.Product_sizes[i].SizeId">
+                        <label for="size_@i">@Model.product.Product_sizes[i].size.size</label>
+                    </div>
+                }
+            </div>
+
+            <button type="button"
+                StyleId="@Model.product.Product_styles[Model.sid].Style_Id" 
+            productId="@Model.product.Product_Id" onclick="AddToCart(this)"
+                    sizeId=""
+                    ImageUrl="@Model.product.Product_styles[Model.sid]?.Style_images?.FirstOrDefault()?.Image_url"
+                    Size=""
+                    productName="@Model.product.Product_name"
+                    StyleName="@Model.product.Product_styles[Model.sid].Style_name"
+                    quantity="1"
+                    price="@Model.product.Product_styles[Model.sid].Style_price"
+                    Discount="0%"
+                    Total="@Model.product.Product_styles[Model.sid].Style_price"
+            class="btn btn-outline-info btn-lg btn-block">Add to cart</button>
+
+            <div class="product-description">
+                <p style="color: #305d60d4;">
+                    @Model.product.Product_description
+                </p>
+            </div>
+
+        </div>
+
+        <div class="product-images">
+            @for (int i = 0; i < Model?.product?.Product_styles?[Model.sid]?.Style_images?.Count(); i++)
+            {
+                <div>
+                    <img style="width:100%;" src="~/images/@Model.product?.Product_styles[Model.sid]?.Style_images?[i]?.Image_url">
+                </div>
+
+            }
+
+        </div>
+
+
+    </div>
+
+
+    @{
+        int number = 0;
+        foreach (Block block in Model?.product?.Product_blocks)
+        {
+
+            if (number % 2 == 0)
+            {
+                 <div class="block">
+                     <div class="block-image">
+
+                         <img src="~/images/@block.Block_image" style="max-width:100%">
+                     </div>
+                     <div class="block-text">
+                         <h2 class="Block-title">@block.Block_title</h2>
+                         <p class="Block-description">
+                             @block.Block_description
+                         </p>
+                     </div>
+
+
+                 </div>
+            }
+            else
+            {
+                <div class="block" style="flex-direction:row-reverse;">
+                    <div class="block-image">
+
+                        <img src="~/images/@block.Block_image" style="max-width:100%">
+                    </div>
+                    <div class="block-text">
+                        <h2 class="Block-title">@block.Block_title</h2>
+                        <p class="Block-description">
+                            @block.Block_description
+                        </p>
+                    </div>
+
+
+                </div>
+            }
+            number = number + 1;
+
+        }
+    }
+</div>
+
+<script type="text/javascript">
+
+    function AddToCart(Item) {
+        var productId = $(Item).attr("productId");
+        var StyleId = $(Item).attr("StyleId");
+
+        var sizeId = $("input[name='size']:checked").val(); // Get the selected sizeId
+       
+        var imageUrl = $(Item).attr("ImageUrl");
+        var productName = $(Item).attr("productName");
+        var styleName = $(Item).attr("StyleName");
+        var quantity = $(Item).attr("quantity");
+        var price = $(Item).attr("price");
+        var Discount = $(Item).attr("Discount");
+        var Total = $(Item).attr("Total");
+
+        var formData = new FormData();
+        formData.append("productId", productId);
+        formData.append("StyleId", StyleId);
+        formData.append("sizeId", sizeId);
+      
+        formData.append("imageUrl", imageUrl);
+        formData.append("productName", productName);
+        formData.append("styleName", styleName);
+        formData.append("quantity", quantity);
+        formData.append("price", price);
+        formData.append("Discount", Discount);
+        formData.append("Total", Total);
+
+        $.ajax({
+            async:true,
+            type:'POST',
+            contentType:false,
+            processData:false,
+            data: formData,
+            url: '/Cart/AddToCart',
+            success:function(dataj){
+              
+                if(dataj.success){
+                   
+                    $("#CartText").text(dataj.counter);
+                }
+                    
+                
+            },
+            error: function () {
+                alert("there is an problem");
+            }
+
+        })
+        
+    }
+
+
+</script>
+
+
+
+

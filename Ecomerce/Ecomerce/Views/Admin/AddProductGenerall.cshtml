@@ -1,0 +1,62 @@
+﻿@using Ecomerce.ViewModels;
+@model FirstPartOfFormOfProductViewModel;
+@{
+    ViewData["Title"] = "AddProductGenerall";
+    Layout = "_my_layout";
+}
+<link href="~/css/generaldetails.css" rel="stylesheet" />
+<h1 style="margin-left:25px">AddProductGenerall</h1>
+
+<link href="~/lib/select2/css/select2.min.css" rel="stylesheet" />
+<form asp-controller="Admin" asp-action="AddProductGenerall" method="post" style="display:grid;gap:40px;grid-column:1">
+
+    <div id="generalProductInformations" class="container" style="display:flex;justify-content:center;align-items:center;flex-direction:column;">
+       
+            <div class="box">
+                <label asp-for="Product_name" class="form-label"></label>
+                <input type="text" asp-for="Product_name" class="form-control" placeholder="Enter product name" />
+                <span asp-validation-for="Product_name" class="text-danger"></span>
+            </div>
+
+
+            <div class="box">
+
+                <label asp-for="Product_description" class="form-label"></label>
+                <input type="text" asp-for="Product_description" class="form-control" placeholder="Enter product description" />
+                <span asp-validation-for="Product_description" class="text-danger"></span>
+            </div>
+
+            <div class="box">
+
+                <label asp-for="Product_rate" class="form-label"></label>
+                <input type="text" asp-for="Product_rate" class="form-control" placeholder="Enter product rate" />
+                <span asp-validation-for="Product_rate" class="text-danger"></span>
+            </div>
+
+
+            <div class="box">
+
+                <label asp-for="Product_Categoriys" class="form-label"></label>
+                <select asp-for="Product_Categoriys" asp-items="Model.Categories" class="form-control" placeholder="Enter product description">
+                    <option>Select categorits</option>
+                </select>
+                <span asp-validation-for="Product_Categoriys" class="text-danger"></span>
+            </div>
+
+
+            <div class="box">
+
+                <label asp-for="Product_sizes" class="form-label"></label>
+                <select asp-for="Product_sizes" asp-items="Model.Sizes" class="form-control" placeholder="Enter product description">
+                    <option>select Sizes</option>
+                </select>
+                <span asp-validation-for="Product_sizes" class="text-danger"></span>
+            </div>
+        
+
+       
+
+    </div>
+
+    <input type="submit" value="next" class="btn btn-primary" />
+</form>

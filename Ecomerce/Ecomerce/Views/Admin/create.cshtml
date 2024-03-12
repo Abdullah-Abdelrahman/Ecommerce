@@ -1,0 +1,192 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "create";
+    Layout = "_my_layout";
+}
+<link href="~/css/getProductById.css" rel="stylesheet" />
+
+<hr />
+
+<form asp-action="create">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+    <div class="container">
+
+
+        <div class="product-container">
+            <div class="product-text">
+                <p class="product-company-logo" style="color:darkgray;">AAA</p>
+                <div class="product-title">
+                    <h1>@Model?.Product_name</h1>
+                </div>
+
+                <div style="justify-content: flex-start;">
+                    <!-- BEGIN app snippet: star_rating -->
+
+                    <div class="spr-stars">
+                    </div>
+                    <!-- END app snippet -->
+
+                    <div class="spr-stars" style="color:darkgray;">
+                        No reviews
+                    </div>
+
+                </div>
+                <div class="price-container">
+                    <div class="price-regular">
+                        <span class="price-item price-item-regular">
+                            LE @Model?.Product_styles?[0]?.Style_price.00 EGP
+                        </span>
+                    </div>
+                </div>
+                <p style="color:darkgray;font-size: small;">
+                    <a href="#" style="text-decoration:underline;color:darkgray">Shipping</a>
+                    calculated at checkout.
+                </p>
+
+                <p>
+                    Options
+                </p>
+                <div class="options">
+
+
+                    @for (int i = 0; i < Model?.Product_styles?.Count(); i++)
+                    {
+
+                        <div class="option-box">
+                            <a href="#">
+                                <img src="~/images/@Model?.Product_styles?[i].Style_images?[0]?.Image_url">
+                            </a>
+
+                        </div>
+
+
+                    }
+
+
+                </div>
+
+
+                <p>
+                    Size
+                </p>
+                <div class="Sizes">
+
+
+                    @for (int i = 0; i < Model?.Product_sizes?.Count(); i++)
+                    {
+
+                        <div class="size-box">
+                            <input type="radio" id="size_@i" name="size" value="@Model.Product_sizes[i].SizeId">
+                            <label for="size_@i">@Model?.Product_sizes[i]?.size?.size</label>
+
+                        </div>
+
+
+                    }
+                </div>
+
+                <button type="button" class="btn btn-outline-info btn-lg btn-block">Add to cart</button>
+
+                <div class="product-description">
+                    <p style="color: #305d60d4;">
+                        @Model?.Product_description
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="product-images">
+                @for (int i = 0; i < Model?.Product_styles?[0]?.Style_images?.Count(); i++)
+                {
+                    <div>
+                        <img style="width:100%;" src="~/images/@Model.Product_styles[0]?.Style_images?[i]?.Image_url">
+                    </div>
+
+                }
+
+            </div>
+
+
+        </div>
+
+
+
+        @{
+            int number = 0;
+            foreach (Block block in Model?.Product_blocks)
+            {
+
+                if (number % 2 == 0)
+                {
+                    <div class="block">
+                        <div class="block-image">
+
+                            <img src="~/images/@block.Block_image" style="max-width:100%">
+                        </div>
+                        <div class="block-text">
+                            <h2 class="Block-title">@block.Block_title</h2>
+                            <p class="Block-description">
+                                @block.Block_description
+                            </p>
+                        </div>
+
+
+                    </div>
+                }
+                else
+                {
+                    <div class="block" style="flex-direction:row-reverse;">
+                        <div class="block-image">
+
+                            <img src="~/images/@block.Block_image" style="max-width:100%">
+                        </div>
+                        <div class="block-text">
+                            <h2 class="Block-title">@block.Block_title</h2>
+                            <p class="Block-description">
+                                @block.Block_description
+                            </p>
+                        </div>
+
+
+                    </div>
+                }
+                number = number + 1;
+
+            }
+        }
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="form-group" style="display:flex;align-content:center;justify-content:center; margin-top:25px;">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+
+
+
+
