@@ -28,6 +28,10 @@ Contributions to the project are encouraged! Please fork the repository, make ne
 
 ## Support
 For inquiries or issues regarding the project, kindly reach out to Abdullah Abdelrahman via the GitHub repository. Contributions, suggestions, and feedback are highly appreciated.
+##Iformations
+- **Database Schema**:
+- ![DatabaseSchema](https://github.com/Abdullah-Abdelrahman/Ecommerce/assets/158853105/a671408f-fe52-4a9d-88b0-fcf4cc3f7ed8)
+
 
 ## License
 This project is licensed under the [MIT License](LICENSE). Feel free to utilize, modify, or distribute it in accordance with the terms of the license.
