@@ -29,6 +29,7 @@ Contributions to the project are encouraged! Please fork the repository, make ne
 ## Support
 For inquiries or issues regarding the project, kindly reach out to Abdullah Abdelrahman via the GitHub repository. Contributions, suggestions, and feedback are highly appreciated.
 ## Iformations
+- there is 3 types of Accounts (Owner ,Admin,User) the Owner have an access to an registration link for adding Admin but sence i didnot emplemint it you can access this page throught [Account/AdminRegisteration](http://abdullahabdel-001-site1.ftempurl.com/Account/AdminRegisteration) Admin has no access to HR page.
 -**How To ADD an Item**:
 - [0]-you must be an admin
 - [1] -go to admin page
