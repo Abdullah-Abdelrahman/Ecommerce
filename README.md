@@ -20,7 +20,7 @@ This repository contains an E-Commerce project developed using ASP.NET Core MVC.
 This project represents the initial venture into E-Commerce development post-ITI studies. While functional, there may be areas for improvement or optimization due to time constraints during development.
 
 ## Links
-- **Live Demo**: [E-Commerce Website](http://abdullahabdel-001-site1.ftempurl.com/)
+- **Live Demo**: [https://aaaecomerce.somee.com/Collections/NewCollections)
 - **GitHub Repository**: [Ecommerce](https://github.com/Abdullah-Abdelrahman/Ecommerce)
 
 ## How to Contribute
@@ -29,7 +29,7 @@ Contributions to the project are encouraged! Please fork the repository, make ne
 ## Support
 For inquiries or issues regarding the project, kindly reach out to Abdullah Abdelrahman via the GitHub repository. Contributions, suggestions, and feedback are highly appreciated.
 ## Iformations
-- there is 3 types of Accounts (Owner ,Admin,User) the Owner have an access to an registration link for adding Admin but sence i didnot emplemint it you can access this page throught [Account/AdminRegisteration](http://abdullahabdel-001-site1.ftempurl.com/Account/AdminRegisteration) Admin has no access to HR page.
+- there is 3 types of Accounts (Owner ,Admin,User) the Owner have an access to an registration link for adding Admin but sence i didnot emplemint it you can access this page throught [Account/AdminRegisteration](https://aaaecomerce.somee.com/Account/Adminregisteration) Admin has no access to HR page.
 - sorry cause i was in hurry after creating a admin account it will send you to HR page wich will cause an error due to Admin dont have the access but dont worry your account has been created just go to another place.
 -**How To ADD an Item**:
 - [0]-you must be an admin
