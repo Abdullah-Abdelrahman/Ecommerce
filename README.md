@@ -1,7 +1,7 @@
 # E-Commerce Project Documentation
 
 ## Overview
-This repository contains an E-Commerce project developed using ASP.NET Core MVC. It integrates various key concepts and technologies including Repository Pattern, asynchronous programming, Identity (user, role), Inversion of Control (IoC), and Validation.
+This repository contains an E-Commerce project developed using ASP.NET Core MVC. It integrates various key concepts and technologies including  asynchronous programming, Identity (user, role), Inversion of Control (IoC), and Validation.
 
 ## Features
 - **CRUD Operations on Products**: Users can perform Create, Read, Update, and Delete operations on products.
